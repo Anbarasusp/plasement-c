@@ -1,0 +1,36 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d,f,avg,total;
+    printf("enter a tamil mark \n");
+    scanf("%d",&a);
+    printf("enter a english mark\n");
+    scanf("%d",&b);
+     printf("enter a maths mark \n");
+    scanf("%d",&c);
+    printf("enter a science mark \n");
+    scanf("%d",&d);
+    printf("enter a social mark \n");
+    scanf("%d",&f);
+    
+    total= (a+b+c+d+f);
+    avg = (a+b+c+d+f)/5 ;
+    
+    printf("this is avarage of your 5 sub marks :%d\n",avg);
+    printf("this is total of your 5 sub marks :%d\n",total);
+    
+    if(avg>90&&avg<100)
+    printf("your grade was A+");
+    else if(avg>80&&avg<90)
+    printf("your grade was A");
+    else if(avg>70&&avg<80)
+    printf("your grade was B");
+    else if(avg>60&&avg<70)
+    printf("your grade was B+");
+    else
+    printf("your grade was f");
+    
+    return 0;
+}
